@@ -97,7 +97,7 @@ def estimate_partial_transform(matched_keypoints):
         # translation y
         dy = transform[1, 2]
         # rotation
-        da = np.arctan2(transform[1, 0], transform[0, 0])
+        da = 0 # np.arctan2(transform[1, 0], transform[0, 0])
     else:
         dx = dy = da = 0
 
